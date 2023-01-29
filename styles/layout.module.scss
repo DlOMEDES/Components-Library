@@ -1,0 +1,9 @@
+.layoutGrid {
+  // grid-template-columns: [mobile-start]1fr [mobileCenter-start]minmax(min-content, 25.6rem)[mobileCenter-end] 1fr[mobile-end];
+  background-color: #f8fbf0;
+  height: 99vh;
+  @media only screen and (min-width: 768px) {
+    grid-template-rows: 8.2rem 4rem repeat(3, 23.6rem) 8.2rem;
+    grid-template-columns:[full-start] 1fr [center-start] repeat(8,[col-start]minmax(min-content, 11.25rem)[col-end])[center-end] 1fr [full-end];
+  }
+}
